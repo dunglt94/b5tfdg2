@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tạo form đơn giản 2</title>
+</head>
+<style>
+    table {
+        width: 30%;
+        font-family: sans-serif;
+        border: 2px solid white;
+        text-align: left;
+        background-color: #fffda9;
+    }
+    th, td {
+        padding: 5px;
+    }
+    th {
+        background-color: aqua;
+        color: blue;
+        border: 3px solid #fffda9;
+    }
+    .firstcl {
+        color: blue;
+    }
+</style>
+<body>
+<form method="get" action="formdg2.html">
+    <table>
+        <tr>
+            <th colspan="2">ĐĂNG KÝ HỌC VIÊN</th>
+        </tr>
+        <tr>
+            <td class="firstcl"><label for="name">Họ và tên</label></td>
+            <td><input type="text" id="name" name="fullname" size="25"></td>
+        </tr>
+        <tr>
+            <td class="firstcl"><label for="birthday">Ngày sinh</label></td>
+            <td><input type="text" id="birthday" name="birthday" size="12px"></td>
+        </tr>
+        <tr>
+            <td class="firstcl">Giới tính</td>
+            <td>
+                <input type="radio" id="male" name="sex">
+                <label for="male">Nam</label>
+                <input type="radio" id="female" name="sex">
+                <label for="female">Nữ</label>
+            </td>
+        </tr>
+        <tr>
+            <td  class="firstcl" style="vertical-align: top"><label for="address">Địa chỉ</label></td>
+            <!--<td><input type="text" id="address" name="address" style="height: 50px"></td>-->
+            <td><textarea name="address" style="height: 50px"></textarea></td>
+        </tr>
+        <tr>
+            <td  class="firstcl"><label for="class">Lớp</label></td>
+            <td>
+                <select name="class" id="class">
+                        <option>-Chọn lớp-</option>
+                        <option>Lớp A</option>
+                        <option>Lớp B</option>
+                        <option>Lớp C</option>
+                        <option>Lớp D</option>
+                        <option>Lớp E</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="firstcl"><label for="email">Email</label></td>
+            <td><input type="text" id="email" name="email" size="15"></td>
+        </tr>
+        <tr>
+            <td class="firstcl"><label for="phone">Điện thoại</label></td>
+            <td><input type="text" id="phone" name="phone" size="15"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Đăng ký">
+                <input type="reset" value="Nhập lại">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
